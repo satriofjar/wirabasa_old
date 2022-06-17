@@ -38,7 +38,7 @@ const Nav = () => {
   return (
     <nav className='nav-bar'>
         <div className='logo-container'>
-            <h2>WiraBasa</h2>
+            <h2 onClick={() => navigate('/')}>WiraBasa</h2>
         </div>
 
         <div className='nav-right'>

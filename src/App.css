@@ -99,9 +99,17 @@ nav .logo-container h2{
   background-repeat: no-repeat;
 }
 
+.home-text{
+  display: inline-block;
+  max-width: 600px;
+  margin: 10px;
+  font-size: 18px;
+}
+
 .card-container{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card{
@@ -166,7 +174,6 @@ nav .logo-container h2{
   
 }
 
-
 .product-clicked{
   margin: 2px;
   padding: 15px 40px;
@@ -178,7 +185,7 @@ nav .logo-container h2{
 }
 
 .detail-product{
-  width: 600px;
+  max-width: 600px;
 }
 
 .detail-product h3{
@@ -204,6 +211,7 @@ nav .logo-container h2{
 .content-container{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .price-container{

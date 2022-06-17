@@ -38,7 +38,9 @@ const Home = ({ setSelectedProductCategory, setSelectedCategory }) => {
         <Nav />
 
             <div className='home'>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div className='home-text'>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
                 <div className='card-container'>
                     {foundCategories?.map((cataegory, _index) => 
                         <div className='card' key={_index}>

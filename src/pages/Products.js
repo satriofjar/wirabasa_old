@@ -59,7 +59,7 @@ const Products = ({ selectedProductCategory, selectedCategory }) => {
 
         <div className='content-container'>
           <div className='detail-product'>
-          <h3>{productItem?.product_name}</h3> 
+            <h3>{productItem?.product_name}</h3> 
             <p>{productItem?.description}</p>
           </div>
 
