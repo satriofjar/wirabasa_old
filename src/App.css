@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&display=swap');
+
+:root{
+  --mainColor : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  --boxColor: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(35, 171, 250,1) 0%, rgba(0,212,255,1) 100%);
+  --buttonColor: #00d4ff;
+  --buttonHover: #009ad6;
+}
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+.secondary-button{
+  color: #797777;
+  background-color: #fff;
+  font-weight: 500px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: solid #797777;
+  margin: 6px;
+}
+
+.secondary-button:hover{
+  color: #303030;
+  border: solid 2px #303030;
+}
+
+/* ------- Navbar ------- */
+
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background: var(--mainColor);
+  padding-top: 10px;
+}
+
+nav .nav-right{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-right p{
+  margin-right: 10px;
+}
+
+nav .nav-button{
+  color: #090979;
+  background-color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  width: 110px;
+  height: 50px;
+}
+
+nav .nav-button:disabled{
+  background-color: #b5b4b4;
+  color: #e42d67;
+}
+
+nav .logo-container h2{
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.user-icon{
+  margin-top: 13px;
+  margin-right: 5px;
+}
+
+/* ------- Home page ------- */
+
+
+.section-1{
+  background: var(--mainColor);
+}
+
+.home{
+  height: 500px;
+  margin-top: 100px;
+  background: url('./assets/wave.svg');
+  background-position: bottom;
+  background-color: var(--mainColor);
+  background-repeat: no-repeat;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  position: relative;
+  width: 270px;
+  height: 340px;
+  padding: 30px;
+  margin: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 4px 2px 16px 1px rgba(0,0,0,0.33);
+-webkit-box-shadow: 4px 2px 16px 1px rgba(0,0,0,0.33);
+-moz-box-shadow: 4px 2px 16px 1px rgba(0,0,0,0.33);
+}
+
+.button-card{               
+  background-color: var(--buttonColor);
+  font-size: 20px;
+  padding: 5px 20px 15px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 110px;
+  height: 40px;  
+  white-space: nowrap;    
+  position: absolute;
+  bottom: 30px;    
+  left: 110px;     
+}
+
+.button-card:hover{
+  background-color: var(--buttonHover);
+}
+
+
+/* ------- Product ------- */
+
+.product-container{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.product-container ul{
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.product-container li{
+  float: left;
+}
+
+.product{
+  margin: 2px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e8eaec;
+  font-size: 18px;
+  
+}
+
+
+.product-clicked{
+  margin: 2px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--buttonColor);
+  color: #fff;
+  font-size: 18px;
+}
+
+.detail-product{
+  width: 600px;
+}
+
+.detail-product h3{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.detail-product p{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 18px;
+
+}
+
+.products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container{
+  display: flex;
+  justify-content: center;
+}
+
+.price-container{
+  width: 240px;
+  height: 340px;
+  padding: 30px;
+  margin: 10px;
+  margin-top: 30px;
+  background: var(--boxColor);
+  border-radius: 5px;
+  box-shadow: 4px 2px 16px 1px rgba(0,0,0,0.33);
+-webkit-box-shadow: 4px 2px 16px 1px rgba(0,0,0,0.33);
+-moz-box-shadow: 4px 2px 16px 1px rgba(0,0,0,0.33);
+}
+
+.price-container a:link{
+  text-decoration: none;
+}
+
+.price-container h2{
+  color: #fff;
+}
+
+.atau{
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn-daftar{
+  color: #23abfa;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.btn-contac{
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  background: #25D366;
+  border-radius: 3px;
+}
+
+.btn-contac img{
+  width: 25px;
+  height: 25px;
+  padding-bottom: 0;
+  margin-bottom: -5px;
+}
+
+
+
+/* ------- Auth Modal ------- */
+
+.login{
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 100, 200, 0.6) 0%,
+    rgba(0, 212, 255, 0.6) 100%
+  ), url('./assets/background.png');
+}
+
+.login-form{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.login-form form{
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input{
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+}
