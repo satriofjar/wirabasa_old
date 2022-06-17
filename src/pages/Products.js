@@ -9,7 +9,6 @@ const Products = ({ selectedProductCategory, selectedCategory }) => {
   const [toggle, setToggle] = useState(0);
   const [products, setProducts] = useState(null);
   const [productItem, setProductItem] = useState(null);
-  const [foundProduct, setFoundProduct] = useState(null);
   const [error, setError] = useState(null);
   const [cookies, setCookie, removeCookie] = useCookies(['user']);
 
