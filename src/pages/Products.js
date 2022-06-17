@@ -65,7 +65,7 @@ const Products = ({ selectedProductCategory, selectedCategory }) => {
 
           <div className='price-container'>
             <h2>Harga</h2>
-            <h2>Rp.{productItem?.price},-</h2>
+            <h2>{productItem?.price}</h2>
             <br />
             <p>{error}</p>
             <a target="_blank" rel="noreferrer" href={cookies.AuthToken && productItem?.url} className='btn-daftar' onClick={() =>

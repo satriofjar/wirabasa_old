@@ -39,13 +39,14 @@ const Home = ({ setSelectedProductCategory, setSelectedCategory }) => {
 
             <div className='home'>
                 <div className='home-text'>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Asah kemampuan berbahasamu sekarang juga! </p>
+                    <p>"WiraBasa, teman belajarmu untuk menjadi pewara dan penyunting tulisan yang handal"</p>
                 </div>
                 <div className='card-container'>
                     {foundCategories?.map((cataegory, _index) => 
                         <div className='card' key={_index}>
-                            <h3>{cataegory.category_name}</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h2>{cataegory.category_name}</h2>
+                            <p>{cataegory.description}</p>
                             <button className='button-card' onClick={() => handleClick(cataegory.products, cataegory.category_name)}>See More</button>
                         </div>
                     )}
