@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 
 const Home = ({ setSelectedProductCategory, setSelectedCategory }) => {
     const [categories, setCategories] = useState(null);
-    const [cookies, setCookie, removeCookie] = useCookies(['categories']);
+    const [cookies, setCookie, removeCookie] = useCookies(['user']);
 
     const navigate = useNavigate();
     

@@ -42,6 +42,8 @@ const Products = ({ selectedProductCategory, selectedCategory }) => {
   useEffect(() => {
     getUser();
   }, []);
+  console.log(toggle);
+  console.log(productItem?.product_name);
 
   return (
     <div className='products'>
@@ -61,6 +63,10 @@ const Products = ({ selectedProductCategory, selectedCategory }) => {
           <div className='detail-product'>
             <h3>{productItem?.product_name}</h3> 
             <p>{productItem?.description}</p>
+            <br />
+            {productItem?.detail_price.map((multiPrice, _index) =>
+            <div key={_index}>{_index === 0 ? <h3 key={_index}>{multiPrice}</h3> : <p key={_index}>{multiPrice}</p>}</div>       
+            )}
           </div>
 
           <div className='price-container'>
