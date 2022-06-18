@@ -42,8 +42,6 @@ const Products = ({ selectedProductCategory, selectedCategory }) => {
   useEffect(() => {
     getUser();
   }, []);
-  console.log(toggle);
-  console.log(productItem?.product_name);
 
   return (
     <div className='products'>
